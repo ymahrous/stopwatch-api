@@ -28,6 +28,6 @@ app.get('/history', (req, res) => { history.handleHistoryGet(req, res, db) })
 
 app.post('/addNew', (req, res) => { addNew.handleAddNew(req, res, db) })
 
-app.listen(3000, () => {
-	console.log('runnin on port 3000')
+app.listen(process.env.port, () => {
+	console.log('runnin')
 })
